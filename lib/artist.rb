@@ -26,5 +26,9 @@ def self.all
    @songs << song
    song.artist = self
  end
-end
+ 
+ def add_songs(array)
+   array.each {|song|self.add_song(song)}
+ end 
+ end 
 
